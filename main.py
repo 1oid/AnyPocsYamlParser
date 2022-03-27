@@ -7,6 +7,8 @@ from template.template import Template
 from template.model import Info
 from template.request import Request
 from template.runner import Runner
+import urllib3
+urllib3.disable_warnings()
 
 
 def scan_callback(template: Template, url: str):
